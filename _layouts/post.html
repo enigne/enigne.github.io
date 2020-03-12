@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<!-- TODO add styles for title, authors, timestamp  -->
+<!-- Look the author details up from the site config. -->
+{% assign author = site.data.authors[page.author] %}
+
+<h1>{{ page.title }}</h1>
+<p>Posted at: {{ page.date | date_to_string }}, by 
+    <span>
+    {% if author %}
+        <!-- with link -->
+        <a href="{{ author.web }}">{{ author.name }}</a>
+    {% else %}
+        {%- if page.author %}
+            <!--without link but has author-->>
+            {{ page.author }}
+        {%- else %}
+            <!-- no author -->
+            Unknown
+        {%- endif %}
+    {% endif %}
+    </span>
+</p>
+
+{{ content }}

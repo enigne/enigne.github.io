@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>{{ page.title }}</title>
+			<!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap.css"> -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+		</head>
+		<body>
+			{% include navigation.html %}
+
+			<div class="container">			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:enigne@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/enigne">github.com/enigne</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
