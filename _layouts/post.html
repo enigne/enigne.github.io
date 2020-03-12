@@ -7,10 +7,11 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 <p>Posted at: {{ page.date | date_to_string }}, by 
+    <!-- author details -->
     <span>
-    {% if author %}
+    {% if page.author == site.owner.nickname %}
         <!-- with link -->
-        <a href="{{ author.web }}">{{ author.name }}</a>
+        <a href="{{ site.owner.web }}">{{ site.owner.name }}</a>
     {% else %}
         {%- if page.author %}
             <!--without link but has author-->>

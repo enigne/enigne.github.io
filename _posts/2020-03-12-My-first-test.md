@@ -1,6 +1,7 @@
 ---
 layout: post
 author: CG
+tag: test 
 ---
 This is a test post for CG.
 

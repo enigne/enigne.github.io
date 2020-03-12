@@ -1,8 +1,13 @@
 - name: Home
   link: /
+- name: Archive
+  link: /archive/
 - name: Blog
   link: /blog/
+- name: Tags
+  link: /tags/
 - name: About
   link: /about/
-- name: Contact
-  link: /contact/
+# - name: Contact
+#   link: /contact/
+

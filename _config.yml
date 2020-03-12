@@ -31,6 +31,7 @@ github_username:  enigne
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -62,3 +63,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+owner:
+  nickname: CG
+  name: Cheng Gong
+  job: "Researcher in Computational Science"
+  degree: Ph.D.
+  email: enigne@gmail.com
+  web: https://enigne.github.io  
+  github: http://github.com/enigne
